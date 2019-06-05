@@ -91,7 +91,6 @@ public class AlbumsController {
     private Blob buildDefaultCoverBlob() {
         ClassLoader classLoader = getClass().getClassLoader();
         InputStream input = classLoader.getResourceAsStream("default-cover.jpg");
-
         return new Blob("default-cover", input, IMAGE_JPEG_VALUE);
     }
 
